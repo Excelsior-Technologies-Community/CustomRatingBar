@@ -51,7 +51,8 @@ allprojects {
 ```
 **Step 2:** Add the dependency to your app module build.gradle:
 ```
-implementation 'com.github.Excelsior-Technologies-Community:EasyRatingBar:1.0.0'
+	        implementation 'com.github.Excelsior-Technologies-Community:CustomRatingBar:1.0.0'
+
 ```
 
 **📌 Usage in XML**
