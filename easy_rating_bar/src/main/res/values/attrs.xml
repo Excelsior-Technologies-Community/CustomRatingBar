@@ -1,0 +1,19 @@
+<resources>
+    <declare-styleable name="EasyRatingBar">
+        <attr name="ratingType" format="enum">
+            <enum name="star" value="0"/>
+            <enum name="heart" value="1"/>
+            <enum name="emoji" value="2"/>
+        </attr>
+        <attr name="starCount" format="integer"/>
+        <attr name="rating" format="float"/>
+        <attr name="iconSize" format="dimension"/>
+        <attr name="iconSpacing" format="dimension"/>
+        <attr name="filledColor" format="color"/>
+        <attr name="emptyColor" format="color"/>
+        <attr name="isIndicator" format="boolean"/>
+        <attr name="enableAnimation" format="boolean"/>
+        <attr name="enableSwipe" format="boolean"/>
+        <attr name="useDrawables" format="boolean"/>
+    </declare-styleable>
+</resources>

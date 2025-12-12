@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/main"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- STAR HEADING -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Star Rating"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+        <!-- STAR RATING BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <com.ext.easy_rating_bar.EasyRatingBar
+                android:id="@+id/starRatingBar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:ratingType="star"
+                android:layout_marginTop="20dp"
+                app:starCount="5"
+                app:rating="4.5"
+                app:iconSize="50dp"
+                app:iconSpacing="12dp"
+                app:filledColor="@android:color/holo_orange_light"
+                app:emptyColor="@android:color/darker_gray"
+                app:isIndicator="false"
+                app:enableAnimation="true"
+                app:enableSwipe="true"
+                app:useDrawables="true"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp"/>
+
+        <!-- HEART HEADING -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heart Rating"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            />
+
+        <!-- HEART RATING BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <com.ext.easy_rating_bar.EasyRatingBar
+                android:id="@+id/heartRatingBar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:ratingType="heart"
+                android:layout_marginTop="20dp"
+                app:starCount="5"
+                app:rating="3.5"
+                app:iconSize="50dp"
+                app:iconSpacing="16dp"
+                app:filledColor="@android:color/holo_red_light"
+                app:emptyColor="@android:color/darker_gray"
+                app:isIndicator="false"
+                app:enableAnimation="true"
+                app:enableSwipe="true"
+                app:useDrawables="true"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp"/>
+
+        <!-- EMOJI HEADING -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emoji Rating"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+           />
+
+        <!-- EMOJI RATING BAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <com.ext.easy_rating_bar.EasyRatingBar
+                android:id="@+id/emojiRatingBar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:ratingType="emoji"
+                app:starCount="5"
+                app:rating="2.5"
+                android:layout_marginTop="20dp"
+                app:iconSize="50dp"
+                app:iconSpacing="12dp"
+                app:filledColor="@android:color/holo_orange_light"
+                app:emptyColor="@android:color/darker_gray"
+                app:isIndicator="false"
+                app:enableAnimation="true"
+                app:enableSwipe="true"
+                app:useDrawables="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
