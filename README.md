@@ -1,4 +1,4 @@
-# **EasyRatingBar**
+# **CustomRatingBar**
 
 A simple **Android library** to provide **custom rating bars** with Stars, Hearts, and Emojis.  
 Users can **rate items** using **touch** or **swipe gestures**, with **animated fill** and **custom drawables**.
